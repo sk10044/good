@@ -2,75 +2,50 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>정보공유방</title>
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
+      background-color: #000;
     }
-
     .container {
       position: relative;
       width: 100%;
-      height: 100vh;
-      overflow: hidden;
+      max-width: 1189px;
+      margin: 0 auto;
     }
-
-    .background-img {
+    .main-image {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      display: block;
     }
-
-    .overlay-link {
+    .link-btn {
       position: absolute;
+      display: block;
       z-index: 10;
-      cursor: pointer;
-      pointer-events: auto;
     }
-
-    /* 상단 버튼 위치 - "정보공유방 입장하기" */
-    #btn1 {
-      top: 33.5%;
-      left: 38.5%;
-      width: 23%;
-      height: 5.2%;
+    /* 중간 버튼 */
+    .middle-btn {
+      top: 240px; left: 530px;
+      width: 230px; height: 60px;
     }
-
-    /* 하단 버튼 위치 - "정보공유방 입장하기" */
-    #btn2 {
-      bottom: 8.5%;
-      left: 33%;
-      width: 35%;
-      height: 8%;
-    }
-
-    @media (max-width: 768px) {
-      /* 모바일 대응: 크기 약간 조정 */
-      #btn1 {
-        top: 33.5%;
-        left: 36%;
-        width: 28%;
-        height: 6.5%;
-      }
-
-      #btn2 {
-        bottom: 9%;
-        left: 30%;
-        width: 40%;
-        height: 9%;
-      }
+    /* 아래 버튼 */
+    .bottom-btn {
+      bottom: 50px; left: 450px;
+      width: 280px; height: 70px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="홈페이지메인.jpg" alt="정보공유방 배경" class="background-img" />
-    <a href="https://naver.com" class="overlay-link" id="btn1" target="_blank"></a>
-    <a href="https://naver.com" class="overlay-link" id="btn2" target="_blank"></a>
+    <!-- 이미지 -->
+    <img src="홈페이지메인.jpg" alt="정보공유방 메인" class="main-image">
+
+    <!-- 중간 링크 -->
+    <a href="http://sk10044.com" class="link-btn middle-btn" target="_blank"></a>
+
+    <!-- 하단 링크 -->
+    <a href="http://sk10044.com" class="link-btn bottom-btn" target="_blank"></a>
   </div>
 </body>
 </html>
