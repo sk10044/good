@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>정보공유방</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
@@ -17,6 +18,7 @@
     }
     .main-image {
       width: 100%;
+      height: auto;
       display: block;
     }
     .link-btn {
@@ -24,15 +26,32 @@
       display: block;
       z-index: 10;
     }
-    /* 중간 버튼 */
     .middle-btn {
-      top: 240px; left: 530px;
-      width: 230px; height: 60px;
+      top: 20.2%;
+      left: 44.6%;
+      width: 19.3%;
+      height: 5.3%;
     }
-    /* 아래 버튼 */
     .bottom-btn {
-      bottom: 50px; left: 450px;
-      width: 280px; height: 70px;
+      bottom: 4.2%;
+      left: 37.8%;
+      width: 23.5%;
+      height: 6.2%;
+    }
+
+    @media screen and (max-width: 600px) {
+      .middle-btn {
+        top: 21%;
+        left: 43%;
+        width: 50%;
+        height: 8%;
+      }
+      .bottom-btn {
+        bottom: 5%;
+        left: 25%;
+        width: 55%;
+        height: 10%;
+      }
     }
   </style>
 </head>
